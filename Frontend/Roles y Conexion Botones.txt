@@ -1,0 +1,129 @@
+
+
+
+   Vista                               Rol con Acceso
+
+AgregarProducto.js                      Tienda
+EditarProducto.js                       Tienda  
+EliminarProducto.js                     Tienda  
+Home.js                                 Todos - Cliente
+HomeTienda.js                           Tienda  
+Login.js                                Todos
+PerfilCliente.js                        Cliente 
+PerfilTienda.js                         Tienda
+Productos.js                            Todos - Cliente
+RegistroTienda.js                       Todos
+RegistroCliente.js                      Todos
+SeleccionRegistro.js                    Todos
+SeleccionSuscripcion.js                 Tienda
+SuscripcionTienda.js                    Tienda
+
+Componentes que pueden ver
+
+botonfooter.js                          Todos
+Header.js                               Todos
+Mapa.js                                 Todos
+ProductCard.js                          Todos
+
+
+
+
+
+Inicia Sesion Cliente (Rol: Cliente)
+
+    Boton Home ---> Home.js
+    Boton Productos ---> Productos.js
+    Boton Perfil --->   PerfilCliente.js
+
+
+Inicia Sesion Tienda (Rol: Tienda)
+
+    Boton Home ---> HomeTienda.js
+    Boton Productos ---> Productos.js
+    Boton Perfil --->   PerfilTienda.js
+
+    Vista = HomeTienda.js
+
+        Boton Suscripcion ---> SuscripcionTienda.js
+        Boton Agregar Producto ---> AgregarProducto.js
+        Boton Editar Producto ---> EditarProducto.js
+        Boton Eliminar Producto ---> EliminarProducto.js
+        Boton Home ---> HomeTienda.js
+        Boton Productos ---> Productos.js
+        Boton Perfil --->   PerfilTienda.js
+
+
+    Vista = SuscripcionTienda.js
+
+        Boton Cambiar ---> SeleccionSuscripcion.js
+        Boton Home ---> HomeTienda.js
+        Boton Productos ---> Productos.js
+        Boton Perfil --->   PerfilTienda.j
+
+    Vista = AgregarProducto.js
+
+        Boton Home ---> HomeTienda.js
+        Boton Productos ---> Productos.js
+        Boton Perfil --->   PerfilTienda.j
+
+    Vista = EditarProducto.js
+
+        Boton Home ---> HomeTienda.js
+        Boton Productos ---> Productos.js
+        Boton Perfil --->   PerfilTienda.j
+
+    Vista = EliminarProducto.js
+
+        Boton Home ---> HomeTienda.js
+        Boton Productos ---> Productos.js
+        Boton Perfil --->   PerfilTienda.j
+
+*Sin Sesion Iniciada (Rol: Todos)*
+
+    Vista = Home.js 
+
+        Boton Home ---> Home.js
+        Boton Productos ---> Productos.js
+        Boton Perfil --->   Login.js
+
+    Vista = Login.js
+
+        Boton Iniciar Sesion ----> (Depende de las credenciales que iniciaron Sesion)
+            Inicia como Cliente
+                    Boton Home ---> Home.js
+                    Boton Productos ---> Productos.js
+                    Boton Perfil --->   PerfilCliente.js
+            Inicia como Tienda
+                    Boton Home ---> HomeTienda.js
+                    Boton Productos ---> Productos.js
+                    Boton Perfil --->   PerfilTienda.js
+
+        Boton Registrarse ----> SeleccionRegistro.js
+        Boton Home ---> Home.js
+        Boton Productos ---> Productos.js
+        Boton Perfil --->   Login.js
+
+    Vista = SeleccionRegistro.js
+
+        Boton Registrarse Como Cliente ---> RegistroCliente.js
+        Boton Registrarse Como Tienda ---> RegistroTienda.js
+        Boton Home ---> Home.js
+        Boton Productos ---> Productos.js
+        Boton Perfil --->   Login.js
+
+    Vista = RegistroCliente.js
+
+        Boton Registrarse ---> Guardar nuevas credenciales de Cliente y Enviar a Login.js 
+        Boton Home ---> Home.js
+        Boton Productos ---> Productos.js
+        Boton Perfil --->   Login.js
+
+    Vista = RegistroTienda.js
+
+        Boton Registrarse ---> Guardar nuevas credenciales de Tienda y Enviar a Login.js 
+        Boton Home ---> Home.js
+        Boton Productos ---> Productos.js
+        Boton Perfil --->   Login.js
+
+
+Cuando se abre la aplicacion por primera ves, entra en rol: Todos hasta que inicia sesion como Cliente o Como Tienda
